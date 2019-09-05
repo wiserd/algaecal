@@ -188,7 +188,9 @@ $screen-xs-max: $screen-xs -1 !default;
     transform:translateX(70%);
   }
   .most-popular .percent-off{
-    transform:translateX(60%);
+    transform: translateX(45%) translateY(32%);
+
+
   }
 
   @media screen and (max-width: $screen-md){
