@@ -103,6 +103,17 @@ $screen-xs-max: $screen-xs -1 !default;
       color: $white;
     }
 
+
+    @include media-breakpoint-up(sm){
+      .product-box{
+        min-height: 670px;
+      }
+    }
+    @include media-breakpoint-down(sm){
+      .product-box{
+        min-height: auto;
+      }
+    }
     .product-box{
       display:flex;
       flex-direction:column;
@@ -174,7 +185,7 @@ $screen-xs-max: $screen-xs -1 !default;
     }
   }
 
-  .product-box-wrapper.most-popular{ margin-top:-35px; }
+  .product-box-wrapper.most-popular{ margin-top:-17px; }
 
   .most-popular{
     .percent-off{
