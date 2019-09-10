@@ -22,7 +22,7 @@ if (!isProd){
 
 
         
-            modalDiv.innerHTML= parsedText.acf["7yr_full_copy"].replace("width=\"807\"", "width=\"300\"").replace("height=\"205\"", "height=\"76\"");
+            modalDiv.innerHTML= parsedText.acf["7yr_full_copy"].replace("300", "807");
             
            }
            else if (xmlhttp.status == 400) {
