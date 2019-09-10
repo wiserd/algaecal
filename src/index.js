@@ -2,10 +2,14 @@
 import './styles/main.scss';
 import loadSVGs from './modules/svg-replace';
 import hideZeroDiscount from './modules/hideZeroDiscount';
+import populateModal from './modules/populateModal';
 import 'popper.js';
 import 'bootstrap';
+
+var isProd = false; 
 
 document.addEventListener('DOMContentLoaded', () => {
   loadSVGs();
   hideZeroDiscount();
+  populateModal(isProd);
 });
