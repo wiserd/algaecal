@@ -199,19 +199,33 @@ $screen-xs-max: $screen-xs -1 !default;
     transform:translateX(70%);
   }
   .most-popular .percent-off{
-    transform: translateX(45%) translateY(32%);
+    transform: translateX(45%) translateY(57%);
+  }
+}
+
+
+@media screen and (max-width: $screen-sm-max){
+  .product-box .product-image .percent-off{
+    transform:translateX(178%) translateY(15%);
+    
+  }
+   .most-popular .product-box .product-image  .percent-off{
+    left:50%;
+    transform:translateX(178%) translateY(83%);
+    
+  }
+}
+ @media screen and (max-width: $screen-md) and (min-width: $screen-sm-max){
+  .product-box .product-image .percent-off{
+ 
+    transform:translateX(34%) translateY(-22%);
 
 
   }
+   .most-popular .product-box .product-image  .percent-off{
+    left:50%;
+    transform:translateX(227%) translateY(83%);
 
-  @media screen and (max-width: $screen-md){
-    .percent-off{
-      transform:translateX(0);
-    }
-    .most-popular .percent-off{
-      left:50%;
-      transform:translate(220%);
-    }
   }
 }
 

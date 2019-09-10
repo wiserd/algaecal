@@ -17,11 +17,10 @@ export default function speakToSpecialistsShowHide(isProd)
 		let currentHour = moment.tz("America/Los_Angeles").format("H")* 100;
 		let time= moment.tz("America/Los_Angeles").format("M");
 
-		if (  (currentHour > hoursInfo.closing_time) || ( currentHour < hoursInfo.starting_time)  )
-		{
+		if (  (currentHour > hoursInfo.closing_time) || ( currentHour < hoursInfo.starting_time)  ){
 			document.getElementById("speakToSpecialists").style.visibility="hidden";
 		}
-		if (time==10){
+		if (time==11){
 			document.getElementsByClassName("US")[0].style.visibility="hidden";
 		}
     }
